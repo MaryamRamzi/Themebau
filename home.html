@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Java Script Project</title>
+    <!-- <link rel="stylesheet" href="./css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style/css/style.css">
+    <link rel="stylesheet" href="./style/css/hover-min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+</head>
+
+<body>
+
+    <header id="site-header">
+        <div class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a href="#" class="navbar-brand">Themebau</a>
+            <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+                <ul class="nav navbar-nav ">
+                    <li class="nav-item">
+                        <a href="home.html" class="text-muted pr-5">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class=" text-muted pr-5" href="Projects.html" id="navbarDropdown1" role="link"
+                            data-toggle="dropdown">
+                            Projects
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another</a>
+                            <a class="dropdown-item" href="#">Something</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="text-muted pr-5" href="Pages.html" id="navbarDropdown2" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Pages
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another</a>
+                            <a class="dropdown-item" href="#">Something</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="text-muted pr-5" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- <div class="shape justify-content-end">
+        <circle cx="320.5" cy="41.5" r="320.5" fill=" #202020"></circle>
+    </div> -->
+
+    <div class="main">
+        <div class="container">
+
+            <div class="row justify-content-center text-white mb-100 ">
+                <div class=" pt-5 col-12 col-lg-8 col-xl-6">
+                    <h1
+                        class="animate__animated animate__fadeInUp header justify-content-center d-flex mb-20 text-white">
+                        Themebau. </h1>
+                    <p class="mb-4 animate__animated animate__slideInUp">Themebau is a stylish universal template for
+                        all your projects & creative output.
+                        Minimalistic and easy to use, it has everything you need to launch your website.</p>
+                </div>
+            </div>
+
+            <div class="piclist row justify-content-center text-white mb-100" id="list">
+
+                <div class=" col-12 col-md-6 col-lg-4  d-flex flex-column justify-content-center align-items-center ">
+
+                    <span class="card-img hvr-float"><img class="img" src="./img/main-home-740-600.jpg"> </span>
+                    <span class="card-body"> <span class="card-title h5">Main Home </span></span>
+                </div>
+                <div class=" col-12 col-md-6 col-lg-4  d-flex flex-column justify-content-center align-items-center ">
+                    <span class="card-img hvr-float"><img class="img " src="./img/simple-portfolio-740-600.jpg"> </span>
+                    <span class="card-body"> <span class="card-title h5">Simple Portfolio </span></span>
+                </div>
+                <div class=" col-12 col-md-6 col-lg-4  d-flex flex-column justify-content-center align-items-center ">
+                    <span class="card-img hvr-float"><img class="img" src="./img/creative-agency-740-600.jpg"> </span>
+                    <span class="card-body"> <span class="card-title h5">Creative Agency</span></span>
+
+                </div>
+            </div>
+        </div>
+        <div class="section bg-light">
+            <div class="container">
+                <div class="row justify-content-center  bg-light mb-100">
+                    <div
+                        class="animate__animated animate__fadeInLeft col-md-7 col-9 d-flex flex-column justify-content-center">
+                        <h2 class="header2 mb-20 ">Themebau.</h2>
+                        <p class="lead ">
+                            Themebau is a stylish universal template for all your projects & creative output.
+                            Minimalistic and easy to use, it has everything you need to launch your website.</p>
+                    </div>
+                    <div
+                        class="animate__animated animate__fadeInRight animate__delay-1s col-md-5 col-9 d-flex flex-column justify-content-center">
+                        <form id="form" action="#">
+                            <label class="lbl mt-3 ml-3 ">Name: </label>
+                            <input type="text" class="form-control" id="subtitle">
+                            <label class="lbl mt-3 ml-3 ">Description:</label>
+                            <input type="text" class="form-control" id="description">
+                            <label class="lbl mt-3 ml-3 ">Picture: </label>
+                            <input type="text" class="form-control" id="picture">
+                            <button type="submit" class="btn mt-3 btn-dark" id="btn">submit</button>
+                        </form>
+                    </div>
+                </div>
+
+
+                <div class="row bg-light " id="loaders">
+                    <div class="my-form justify-content-center text-white mb-100 d-flex flex-wrap " id="cart">
+
+                    </div>
+                </div>
+
+                <div class="row bg-light justify-content-center mb-100" id="colors">
+
+                    <div class="col-md-3 col-9 pb-5 d-flex flex-column">
+                        <button id="btnf" type="button" class="btn btn-outline-dark  btn-lg hvr-float"
+                            onclick=" randBg ();">
+                            <span> Change Color </span> </button>
+                    </div>
+
+                    <div class="col-md-3 col-9 pb-5 d-flex flex-column">
+                        <button id="btns" type="button" class="btn btn-outline-dark btn-lg hvr-float"
+                            onclick=" changeBg ();">Change Color</button>
+                    </div>
+
+                    <div class="col-md-3 col-9 pb-5 d-flex flex-column">
+                        <button type="submit" class="btn btn-outline-dark btn-lg hvr-float"
+                            onclick=" printLog ();">Print Log "hi"</button>
+                    </div>
+
+                    <div class="col-md-3 col-9 pb-5 d-flex flex-column">
+                        <button id="btnt" type="button" class="btn btn-outline-dark btn-lg hvr-float"
+                            onclick=" colorBg ();">Change Color</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="style/js/holder.min.js"></script>
+    <script src="style/js/app.js"></script>
+
+
+</html>
